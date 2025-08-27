@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Domain Tab Grouper",
+  "version": "1.1",
+  "description": "Group tabs by selecting a domain from the popup menu.",
+  "permissions": ["tabs", "windows"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
