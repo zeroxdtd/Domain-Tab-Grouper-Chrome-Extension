@@ -30,4 +30,12 @@ async function loadDomains() {
   });
 }
 
+document.getElementById("all-domains-btn").addEventListener("click", () => {
+  chrome.runtime.sendMessage({ action: "groupAllDomains" });
+});
+
+document.getElementById("all-tabs-btn").addEventListener("click", () => {
+  chrome.runtime.sendMessage({ action: "groupAllTabs" });
+});
+
 loadDomains();

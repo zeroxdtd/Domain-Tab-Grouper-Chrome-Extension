@@ -3,12 +3,18 @@
 <head>
   <title>Domain Grouper</title>
   <style>
-    body { font-family: Arial, sans-serif; min-width: 200px; padding: 10px; }
-    button { width: 100%; margin: 4px 0; padding: 6px; cursor: pointer; }
+    body { font-family: Arial, sans-serif; min-width: 240px; padding: 10px; }
+    button { width: 100%; margin: 4px 0; padding: 6px; cursor: pointer; border-radius: 6px; border: 1px solid #ccc; }
+    h3 { margin: 8px 0; font-size: 16px; }
+    #all-domains-btn { background-color: #4285f4; color: white; font-weight: bold; }
+    #all-tabs-btn { background-color: #34a853; color: white; font-weight: bold; }
   </style>
 </head>
 <body>
-  <h3>Select a Domain</h3>
+  <h3>Domain Grouper</h3>
+  <button id="all-domains-btn">📂 Group by Domains</button>
+  <button id="all-tabs-btn">🗂️ Group All Tabs into One Window</button>
+  <h3>Or Select a Domain</h3>
   <div id="domain-list"></div>
   <script src="popup.js"></script>
 </body>
